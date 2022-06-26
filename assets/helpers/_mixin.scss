@@ -1,0 +1,7 @@
+@mixin font ($Valihan, $Nura, $color) {
+    font-family: 'Open Sans';
+    font-weight: $Valihan;
+    font-size: $Nura;
+
+    color: $color;
+}

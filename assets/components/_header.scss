@@ -1,0 +1,70 @@
+.header {
+    background: $bg-darkblue;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        @include font (600, 23px, $text-blue);
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        @include font (600, 16px, $text-white);
+        // :hover {
+        //     $text-blue
+        // }
+    }
+
+    &__btn {
+        background: #3A68B8;
+        border: 5px solid $text-blue;
+        border-radius: 5px;
+        width: 112px;
+        height: 52px;
+        transition: 0.5s;
+        &:hover {
+            background: $bg-darkblue;
+            color: $text-blue;
+        }
+    }
+    &__list {
+        display: flex;
+        gap: 40px;
+    }
+    &__img {
+        width: 70px;
+    }
+    &__item {
+        margin-right: 60px;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: $text-white;
+            transition: 0.3s;
+        }
+
+        &::before {
+            top: -2px;
+        }
+
+        &::after {
+            right: 0;
+            bottom: -2px;
+        }
+
+        &:hover {
+
+            &::before,
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.feature {
+    background: $bg-darkblue;
+    padding-top: 100px;
+    &__content {
+        display: flex;
+    }
+    &__title {
+        @include font (700, 40px, $text-white);
+        margin-bottom: 50px;
+
+    }
+    &__description {
+        @include font (600, 16px, $text-white)
+    }
+    
+}

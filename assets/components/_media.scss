@@ -1,0 +1,118 @@
+@media screen and (max-width:940px) {
+    .hero {
+        &__content {
+            flex-wrap: wrap;
+        }
+    }
+
+    .about {
+        &__content {
+            flex-wrap: wrap;
+        }
+
+    }
+
+    .feature {
+        &__content {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width:751px) {
+    .header {
+        &__list {
+            display: none;
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__link {
+            @include font (600, 30px, #00d4ff);
+        }
+
+        .burger {
+            display: block;
+
+        }
+    }
+    .swiper {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:715px) {
+    .hero {
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    .about {
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    .feature {
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width:717px) {
+    .about {
+        &__img {
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (max-width:446px) {
+    .hero {
+        
+        &__btn {
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:397px) {
+    .hero {
+        &__title {
+            @include font (750, 50px, $text-white)
+        }
+        &__btn {
+            margin-left: 90px;
+        }
+    }
+}
+@media screen and (max-width:364px) {
+    .hero {
+        &__btn {
+            
+            margin-left: 70px;
+        }
+        &__title {
+            @include font (700, 45px, $text-white)
+        }
+    }
+    .swiper {
+        width: 300px;
+        height: 250px;
+    }
+    .feature {
+        &__title {
+            @include font (600, 35px, $text-white);
+            margin-bottom: 50px;
+    
+        }
+        &__description {
+            @include font (500, 13px, $text-white)
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.burger {
+    display: none;
+    &__menu {
+        width: 100px;
+        height: 80px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__line {
+        background: $text-blue;
+        height: 6px;
+    }
+    .header__item {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        position: absolute;
+        right: -1000px;
+        background: linear-gradient(45deg, #020024, #0d0db9);
+        transition: 1s;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        z-index: 10;
+        
+    }
+    &__close {
+        display: none;
+        @include font (700, 40px, $text-blue)
+    }
+    &.active &__list {
+        right: 0;
+        height: 338vh;
+        width: 50vw;
+    }
+    &.active &__close {
+        display: block;
+    }
+    &.active &__line {
+        display: none;
+    }
+}

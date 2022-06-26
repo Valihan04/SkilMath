@@ -1,0 +1,38 @@
+.about {
+    background: $bg-darkblue;
+    &__content {
+        display: flex;
+    }
+    &__title {
+        @include font (700, 40px, $text-white);
+    }
+
+    &__description {
+        @include font (600, 16px, $text-white);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        background: #3A68B8;
+        border: 5px solid $text-blue;
+        border-radius: 5px;
+        width: 150px;
+        height: 52px;
+        @include font (600, 16px, $text-white);
+        transition: 0.5s;
+        &:hover {
+            background: $bg-darkblue;
+            color: $text-blue;
+        }
+       
+    }
+    &__right {
+        padding-top: 200px;
+    }
+    &__left {
+        padding-top: 100px;
+    }
+    
+}
+

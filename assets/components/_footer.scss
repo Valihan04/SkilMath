@@ -1,0 +1,17 @@
+.footer {
+    background: $text-blue;
+    padding-top: 50px;
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+    }
+    &__logo {
+        width: 100px;
+    }
+
+    &__title {
+        @include font (400, 40px, $text-white)
+    }
+}

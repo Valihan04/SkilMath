@@ -200,6 +200,25 @@ li {
   background: #10041c;
 }
 
+.hero__ava {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  padding-top: 50px;
+  margin-bottom: -50px;
+}
+
+.hero__box {
+  width: 230px;
+  height: 230px;
+  background: url(../assets/img/swiper_js/Chiken.jpg) center no-repeat;
+  border-radius: 100%;
+}
+
 .hero__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,6 +448,24 @@ li {
   }
 }
 
+@media screen and (max-width: 717px) {
+  .about__img {
+    max-width: 100%;
+  }
+  .swiper_js {
+    display: none;
+  }
+  .hero__ava {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (max-width: 715px) {
   .hero__img {
     max-width: 100%;
@@ -437,12 +474,6 @@ li {
     max-width: 100%;
   }
   .feature__img {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 717px) {
-  .about__img {
     max-width: 100%;
   }
 }

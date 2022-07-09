@@ -42,7 +42,23 @@
         max-width: 100%;
     }
 }
-
+@media screen and (max-width:717px) {
+    .about {
+        &__img {
+            max-width: 100%;
+        }
+    }
+    .swiper_js {
+        display: none;
+    }
+    .hero {
+        &__ava {
+            display: block;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
 @media screen and (max-width:715px) {
     .hero {
         &__img {
@@ -64,13 +80,7 @@
 
 }
 
-@media screen and (max-width:717px) {
-    .about {
-        &__img {
-            max-width: 100%;
-        }
-    }
-}
+
 @media screen and (max-width:446px) {
     .hero {
         
